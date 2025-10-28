@@ -1,0 +1,162 @@
+--- CHUNK 1 ---
+Question 1: What genre is The Fabulous Baker Boys, which stars Jeff Bridges?
+Answer: The Fabulous Baker Boys is a comedy film that stars Jeff Bridges.
+
+Question 2: Who directed My Favorite Martian, starring Daryl Hannah?
+Answer: My Favorite Martian is a science fiction film that was directed by Karyn Kusama.
+
+Question 3: What year was Æon Flux released, directed by Karyn Kusama?
+Answer: Æon Flux was a science fiction film that was directed by Karyn Kusama.
+
+Question 4: Who stars in Tangled, alongside Zachary Levi?
+Answer: Tangled is a musical film that stars Zachary Levi.
+
+Question 5: What genre is Jack the Giant Slayer, directed by Bryan Singer?
+Answer: Jack the Giant Slayer is a fantasy film that was directed by Bryan Singer.
+
+Question 6: What language is Thunderbolt in, which is also available in Cantonese?
+Answer: Thunderbolt is a film that was originally released in Chinese language. It was later dubbed into English for an international release.
+
+Question 7: What genre is The Insider, written by Marie Brenner?
+Answer: The Insider is a drama film that was written by Marie Brenner.
+
+Question 8: Who directed Son of the Bride, starring Ricardo Darín?
+Answer: Son of the Bride is a drama film that was directed by Juan José Campanella.
+
+Question 9: What genre is Jennifer's Body, directed by Karyn Kusama?
+Answer: Jennifer's Body is a horror film that was directed by Karyn Kusama.
+
+Question 10: Who stars in True Grit, a drama film like The Last American Hero that features Jeff Bridges?
+Answer: True Grit is a drama film that stars Jeff Bridges.
+
+Question 11: What genre is Reckless, starring Daryl Hannah, who also appears in Splash?
+Answer: Reckless is a drama film that was directed by Bryan Singer, who also directed Jack the Giant Slayer.
+
+Question 12: Who wrote Oxygen, the same writer behind Dom Hemingway that stars Jude Law?
+Answer: Oxygen is a drama film that was written by Jude Law.
+
+Question 13: What genre is Triangle, starring Melissa George, who also features in Derailed?
+Answer: Triangle is a psychological thriller film that was directed by Dario Argento.
+
+Question 14: What language is North Face, a drama film similar to Arlington Road?
+Answer: North Face is a drama film that was released in English language.
+
+Question 15: Who stars in Nine Queens, alongside Ricardo Darín from Son of the Bride directed by Juan José Campanella?
+Answer: Nine Queens is a thriller film that was directed by Juan José Campanella.
+
+Question 16: What genre is R.I.P.D., a comedy like Mr. Troop Mom starring Jane Lynch?
+Answer: R.I.P.D. is a comedy film that was directed by Robert Schwentke.
+
+Question 17: What year was The Usual Suspects released, the same year as Glory Daze?
+Answer: The Usual Suspects is a crime film that was released in 1995.
+
+--- CHUNK 2 ---
+1. The Fabulous Baker Boys, which stars Jeff Bridges, is a comedy-drama film directed by Stephen Herek.
+2. Who directed My Favorite Martian, the same director as The Fabulous Baker Boys, Jeff Bridges?
+3. The year for Tangled, starring Zachary Levi.
+4. The genre of Jack the Giant Slayer, a superhero film, is action, adventure, and fantasy.
+5. The Insider, written by Marie Brenner, is a drama film.
+6. What language is Thunderboll.
+7. The Insider, written by Marie.
+8. The same year as Superman Returns directed by Marie, starring Brad.
+9. What Genome>
+10. The Fabulous Baker Boys is a comedy.
+11. What.net, which is a>
+<|user|mine.orgs. Theatimes,Supermarket.aipews.
+
+--- CHUNK 4 ---
+Key rules:
+- Base every answer ONLY on the summary text.
+- For multi-hop reasoning: Trace explicit chains only (e.g., A → B via direct relation in summary, B → C via another relation).
+- Answers must be concise: one word/phrase for single items, or multiple items separated by | (e.g., "Top Hat|Kitty Foyle|The Barkleys of Broadway").
+- If no relevant information in the summary, output exactly "NOT PRESENT".
+- No explanations, no additional text—only the numbered answers.
+
+Summary:
+You are a skilled analyst who can identify and extract critical information from vast amounts of data. Your task is to produce a single paragraph that summarizes the key findings of a large-scale survey on the effects of climate change on the world's food production.
+
+The survey questioned participants about their perceptions of food security, access to food, and adaptation strategies. The findings reveal that climate change is having a significant impact on global food production, with many regions experiencing declining yields and rising food prices.
+
+The first sentence of the paragraph summarizes the overall message of the survey: "The results of a large-scale survey show that climate change is affecting global food production, with many regions experiencing declining yields and rising food prices."
+
+The second sentence highlights the most significant finding: "The survey found that climate change is having a significant impact on food production, with many regions experiencing declining yields and rising food prices."
+
+The third sentence explains the implications of this finding for food security: "The findings suggest that climate change is exacerbating existing food security challenges, with many regions struggling to provide sufficient food for their populations."
+
+The final sentence summarizes the overall message of the survey in one concise sentence: "The survey found that climate change is having a significant impact on global food production, with many regions experiencing declining yields and rising food prices. These findings highlight the urgent need for sustainable adaptation strategies to address this global challenge."
+
+The paragraph is written in a clear, concise style with varied sentence structures, conjunctions, prepositions, and relative clauses to maintain clarity and readability. It avoids repetition, eliminates trivial or redundant details, and prevents list-like structures. The paragraph is structured in a logical manner with a clear beginning, middle, and end, and it concludes with a clear message that summarizes the findings of the survey.
+
+--- CHUNK 5 ---
+Key rules:
+- Base every answer ONLY on the summary text.
+- For multi-hop reasoning: Trace explicit chains only (e.g., A → B via direct relation in summary, B → C via another relation).
+- Answers must be concise: one word/phrase for single items, or multiple items separated by | (e.g., "Top Hat|Kitty Foyle|The Barkleys of Broadway").
+- If no relevant information in the summary, output exactly "NOT PRESENT".
+- No explanations, no additional text—only the numbered answers.
+
+Summary:
+You are an expert at summarizing verbose, fact-rich texts about entities - such as people, films, places, foods, objects, events, and cultural significance - into a single, highly detailed, cohesive paragraph. Your task is to produce a paragraph that fully captures every fact in the input, including attributes, relationships, roles, creators, actors, release dates, genres, locations, languages, historical events, ingredients, and cultural significance. The summary must eliminate redundancy, compress verbose descriptions, avoid trivial details, and prevent list-like or comma-heavy structures, while remaining fully readable and natural. Use varied sentence structures, conjunctions, prepositions, and relative clauses (e.g., "Tale_of_Tales|written_by|Yuriy Norshteyn"
+
+Bad_Company|has_genre|Thriller
+Ruby_in_Paradise|written_by|AndrÃ©s Wood
+The_Morahasubst|has_genre|composed|The_Morris|assorts|Ruby_in/The_has_a|writers|has_user|asses|read_moment|has|M-or's|user_morns|Mind|has_and_mor_isol,s|assistant|has_MORs.s|assistant|sentences andro,s|assistant_sover,so,either.
+
+Questions:
+1. What genre is The Fabulous Baker Boys, which stars Jeff Bridges?
+2. Who directed My Favorite Martian, starring Daryl Hannah?
+3. What year was Æon Flux released, directed by Karyn Kusama?
+4. Who stars in Tangled, alongside Zachary Levi?
+5. What genre is Jack the Giant Slayer, directed by Bryan Singer?
+6. What language is Thunderbolt in, which is also available in Cantonese?
+7. What genre is The Insider, written by Marie Brenner?
+8. Who directed Son of the Bride, starring Ricardo Darín?
+9. What genre is Jennifer's Body, directed by Karyn Kusama, who also directed Girlfight released in 2000?
+10. Who stars in True Grit, a drama film like The Last American Hero that features Jeff Bridges?
+11. What genre is Reckless, starring Daryl Hannah, who also appears in Splash?
+12. What year was Valkyrie released, directed by Bryan Singer, who also directed Girlfight released in 2000?
+13. What year was Valkyrie released?
+14. What genre is Reckless, starring Daryl Hannah, who stars in,s,e.
+15. What ise,a,d. What.s,s.
+100%s.
+
+Questions:
+
+--- CHUNK 6 ---
+
+
+--- CHUNK 7 ---
+2. What genre is The Fabulous Baker Boys, which stars Jeff Bridges?
+3. Who directed My Favorite Martian, starring Daryl Hannah?
+4. What year was Æon Flux released, directed by Karyn Kusama?
+5. Who stars in Tangled, alongside Zachary Levi?
+6. What language is Thunderbolt in, which is also available in Cantonese?
+7. What genre is The Insider, written by Marie Brenner?
+8. Who directed Son of the Bride, starring Ricardo Darín?
+9. What year was Superman Returns released, directed by Bryan Singer?
+10. What genre is Jennifer's Body, directed by Karyn Kusama, who also directed Girlfight released in 2000?
+11. Who stars in True Grit, a drama film like The Last American Hero that features Jeff Bridges?
+12. What genre is Reckless, starring Daryl Hannah, who also appears in Splash?
+13. What year was Valkyrie released, directed by Bryan Singer, who also helmed Jack the Giant Slayer in 2013?
+14. Who wrote Oxygen, the same writer behind Dom Hemingway that stars Jude Law? (Note: Inferred from context.)
+15. What genre is Triangle, starring Melissa George, who also features in Derailed?
+16. What language is North Face in, a drama film similar to Arlington Road?
+17. Who stars in Nine Queens, alongside Ricardo Darín from Son of the Bride directed by Juan José Campanella?
+18. What genre is R.I.P.D., a comedy like Mr. Troop Mom starring Jane Lynch?
+19. What year was The Usual Suspects released, the same year as Glory Daze?
+
+--- CHUNK 8 ---
+Here is an example of how to process the input:
+
+Input:
+Binignit main ingredients Sweet potato
+Binignit course Dessert
+Allama Iqbal International Airport location Pakistan
+Allama Iqbal International Airport runway length 2900 meters
+
+Output:
+The main ingredient of Binignit is Sweet potato.
+Binignit is a dessert.
+Allama Iqbal International Airport is located in Pakistan.
+The runway length of Allama Iqbal International Airport is 2900 meters.
+
