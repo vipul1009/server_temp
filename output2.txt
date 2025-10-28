@@ -1,0 +1,379 @@
+The_Mirror_Has_Two_Faces|has_genre|Drama
+Uncommon_Valor|starred_actors|Robert Stack
+Ã†on_Flux|directed_by|Karyn Kusama
+Seventh_Son|has_genre|Adventure
+Splash|starred_actors|Daryl Hannah
+Son_of_the_Bride|directed_by|Juan JosÃ© Campanella
+Shaft|starred_actors|Charles Cioffi
+Thunderbolt|in_language|English
+Jennifer's_Body|directed_by|Karyn Kusama
+Climates|starred_actors|Ebru Ceylan
+Rancho_Deluxe|has_genre|Western
+Forty_Shades_of_Blue|starred_actors|Dina Korzun
+Violeta_Went_to_Heaven|has_genre|Drama
+The_Insider|has_genre|Drama
+North_Face|in_language|German
+Clockstoppers|release_year|2002
+The_Fabulous_Baker_Boys|starred_actors|Jeff Bridges
+The_Last_American_Hero|has_genre|Drama
+Mr._Troop_Mom|has_genre|Comedy
+The_Fabulous_Baker_Boys|has_genre|Drama
+My_Favorite_Martian|starred_actors|Daryl Hannah
+Thunderbolt_and_Lightfoot|has_genre|Crime
+Piccadilly|directed_by|Ewald AndrÃ© Dupont
+Return_with_Honor|directed_by|Terry Sanders
+Oxygen|written_by|Richard Shepard
+Ã†on_Flux|release_year|2005
+Stay_Hungry|has_genre|Comedy
+Hearts_of_the_West|has_genre|Comedy
+Stick_It|has_genre|Comedy
+Triangle|has_genre|Action
+R.I.P.D.|has_genre|Comedy
+Jack_the_Giant_Slayer|directed_by|Bryan Singer
+The_Confession|starred_actors|Alec Baldwin
+Bad_Company|has_genre|Action
+All's_Faire_in_Love|has_genre|Comedy
+The_Tie_That_Binds|directed_by|Wesley Strick
+Nine_Queens|starred_actors|Ricardo DarÃ­n
+The_Confession|starred_actors|Simone Signoret
+Seventh_Son|has_genre|Fantasy
+Uncommon_Valor|starred_actors|Gene Hackman
+Arlington_Road|has_genre|Drama
+Mischief|directed_by|Mel Damski
+Superman_Returns|release_year|2006
+The_Usual_Suspects|release_year|1995
+Sliding_Doors|has_genre|Drama
+Reckless|directed_by|Norman RenÃ©
+True_Grit|starred_actors|Jeff Bridges
+The_Matador|written_by|Richard Shepard
+Tangled|starred_actors|Zachary Levi
+Girlfight|release_year|2000
+Reckless|starred_actors|Daryl Hannah
+The_Mummy|has_genre|Horror
+Fat_City|starred_actors|Jeff Bridges
+Article_99|written_by|Ron Cutler
+Ronal_the_Barbarian|written_by|Philip Einstein Lipski
+Torn|starred_actors|Mahnoor Baloch
+From_Up_on_Poppy_Hill|release_year|2011
+National_Lampoon_Presents_Dorm_Daze|starred_actors|Tatyana Ali
+Two_Much|starred_actors|Daryl Hannah
+The_Insider|written_by|Marie Brenner
+Memoirs_of_an_Invisible_Man|directed_by|John Carpenter
+Valkyrie|directed_by|Bryan Singer
+Fist_of_the_North_Star|starred_actors|Gary Daniels
+The_Mummy_Returns|starred_actors|John Hannah
+The_Mummy|has_genre|Adventure
+Ronal_the_Barbarian|written_by|Kresten Vestbjerg Andersen
+Beyond_a_Reasonable_Doubt|release_year|1956
+Project_X|directed_by|Jonathan Kaplan
+The_Mirror_Has_Two_Faces|has_genre|Comedy
+The_Saragossa_Manuscript|starred_actors|Zbigniew Cybulski
+Triangle|has_genre|Thriller
+Derailed|starred_actors|Melissa George
+30_Days_of_Night|has_genre|Horror
+Tangled_Ever_After|starred_actors|Zachary Levi
+Mr._Troop_Mom|starred_actors|Jane Lynch
+Fearless|has_genre|Drama
+Black_Dragons|starred_actors|Joan Barclay
+Thunderbolt|in_language|Cantonese
+Girlfight|directed_by|Karyn Kusama
+Shades_of_Ray|starred_actors|Zachary Levi
+Fist_of_Legend|in_language|Japanese
+Dom_Hemingway|written_by|Richard Shepard
+The_Amateurs|starred_actors|Jeff Bridges
+Thunderbolt|in_language|Japanese
+Circus|starred_actors|John Hannah
+Frida|written_by|Diane Lake
+Jack_the_Giant_Slayer|release_year|2013
+Little_Miss_Marker|directed_by|Alexander Hall
+Ski_Patrol|starred_actors|Yvette Nipar
+Fist_of_the_North_Star|starred_actors|Costas Mandylor
+Surf's_Up|has_genre|Comedy
+Glory_Daze|release_year|1995
+Uncommon_Valor|starred_actors|Fred Ward
+Home_Alone_4|starred_actors|French Stewart
+My_Favorite_Martian|directed_by|Donald Petrie
+8_Million_Ways_to_Die|starred_actors|Jeff Bridges
+Black_Water|starred_actors|Diana Glenn
+Broken_Vessels|starred_actors|Todd Field
+Thunderbolt_and_Lightfoot|starred_actors|Jeff Bridges
+The_Bounty|release_year|1984
+Cat_People|starred_actors|Simone Simon
+Love_Stinks|release_year|1999
+Thunderbolt|directed_by|Gordon Chan
+Legal_Eagles|directed_by|Ivan Reitman
+Masked_and_Anonymous|starred_actors|Jeff Bridges
+Wreck-It_Ralph|has_genre|Comedy
+Black_Water|starred_actors|Andy Rodoreda
+Captains_of_the_Clouds|directed_by|Michael Curtiz
+Jumanji|starred_actors|Bradley Pierce
+The_Vanishing|starred_actors|Jeff Bridges
+The_Men_Who_Stare_at_Goats|has_genre|Comedy
+Forty_Shades_of_Blue|has_genre|Music
+The_Matador|directed_by|Richard Shepard
+The_Big_Lebowski|starred_actors|Jeff Bridges
+The_Mummy|has_genre|Fantasy
+King_Kong|starred_actors|Jeff Bridges
+Circus|has_genre|Crime
+Afternoon_Delight|starred_actors|Jane Lynch
+X-Men|release_year|2000
+The_Contender|starred_actors|Jeff Bridges
+The_Contender|has_genre|Drama
+Music_Within|has_genre|Drama
+Turn_It_Up|directed_by|Robert Adetuyi
+Ronal_the_Barbarian|directed_by|Kresten Vestbjerg Andersen
+Bunny_and_the_Bull|starred_actors|Simon Farnaby
+Crazy_People|directed_by|Tony Bill
+Black_Water|starred_actors|Maeve Dermody
+The_Vanishing|has_genre|Thriller
+The_Linguini_Incident|written_by|Tamar Brott
+Attack_of_the_50_Ft._Woman|directed_by|Christopher Guest
+Middle_of_Nowhere|has_genre|Drama
+30_Days_of_Night|starred_actors|Melissa George
+Kamchatka|directed_by|Marcelo PiÃ±eyro
+Turn_It_Up|release_year|2000
+The_Merry_Widow|directed_by|Ernst Lubitsch
+Pixote|written_by|JosÃ© Louzeiro
+Nine_Queens|directed_by|FabiÃ¡n Bielinsky
+The_Big_Lebowski|has_genre|Crime
+Crazy_Heart|has_genre|Music
+Rancho_Deluxe|has_genre|Comedy
+Ski_Patrol|starred_actors|T.K. Carter
+The_Last_Unicorn|has_genre|Fantasy
+Clockstoppers|starred_actors|French Stewart
+Home_Alone_4|release_year|2002
+King_Kong|has_genre|Adventure
+The_Tie_That_Binds|starred_actors|Daryl Hannah
+Shaft|directed_by|Gordon Parks
+Take_a_Girl_Like_You|starred_actors|Hayley Mills
+Wreck-It_Ralph|starred_actors|Jane Lynch
+Bury_My_Heart_at_Wounded_Knee|release_year|2007
+The_Last_Picture_Show|starred_actors|Jeff Bridges
+Sliding_Doors|starred_actors|John Hannah
+The_Morning_After|has_genre|Mystery
+The_Linguini_Incident|directed_by|Richard Shepard
+The_Mummy_Returns|has_genre|Adventure
+Let_Sleeping_Corpses_Lie|in_language|Spanish
+Wildflowers|starred_actors|Daryl Hannah
+Derailed|has_genre|Action
+Carancho|starred_actors|Ricardo DarÃ­n
+The_Scarlet_Letter|directed_by|Roland JoffÃ©
+Speedway_Junky|starred_actors|Daryl Hannah
+Another_Cinderella_Story|has_genre|Musical
+Hearts_of_the_West|starred_actors|Jeff Bridges
+The_Pope_of_Greenwich_Village|directed_by|Stuart Rosenberg
+Ski_Patrol|directed_by|Richard Correll
+The_Designated_Mourner|starred_actors|Mike Nichols
+The_Fisher_King|starred_actors|Jeff Bridges
+The_Confession|written_by|Sol Yurick
+Bad_Company|has_genre|Western
+The_Fisher_King|has_genre|Drama
+Apt_Pupil|directed_by|Bryan Singer
+True_Grit|has_genre|Western
+From_Up_on_Poppy_Hill|starred_actors|Masami Nagasawa
+King_Kong|has_genre|Fantasy
+Private_Resort|starred_actors|Rob Morrow
+The_Gingerbread_Man|directed_by|Robert Altman
+Roxanne|starred_actors|Daryl Hannah
+Fist_of_Legend|directed_by|Gordon Chan
+Ski_Patrol|starred_actors|Roger Rose
+Legal_Eagles|starred_actors|Daryl Hannah
+Crazy_People|starred_actors|Daryl Hannah
+Derailed|has_genre|Thriller
+The_Scarlet_Letter|in_language|German
+Middle_of_Nowhere|has_genre|Comedy
+Wild_Bill|starred_actors|Jeff Bridges
+The_Muse|has_genre|Comedy
+Spiral|starred_actors|Zachary Levi
+A_Smoky_Mountain_Christmas|directed_by|Henry Winkler
+Private_Resort|written_by|Ken Segall
+Circus|has_genre|Thriller
+Fat_City|has_genre|Drama
+Klute|starred_actors|Charles Cioffi
+The_Designated_Mourner|written_by|Wallace Shawn
+Return_with_Honor|directed_by|Freida Lee Mock
+A_Smoky_Mountain_Christmas|has_genre|Fantasy
+R.I.P.D.|starred_actors|Jeff Bridges
+Pixote|has_genre|Crime
+Take_a_Girl_Like_You|starred_actors|Noel Harrison
+Cold_Souls|has_genre|Drama
+Carancho|directed_by|Pablo Trapero
+Tale_of_Tales|written_by|Yuriy Norshteyn
+Bad_Company|has_genre|Thriller
+Shades_of_Ray|release_year|2008
+Music_Within|starred_actors|Melissa George
+Captains_of_the_Clouds|written_by|Roland Gillett
+The_Last_American_Hero|starred_actors|Jeff Bridges
+Wreck-It_Ralph|has_genre|Animation
+Oxygen|directed_by|Richard Shepard
+Broken_Vessels|release_year|1998
+Stick_It|starred_actors|Jeff Bridges
+Surf's_Up|has_genre|Family
+Nadine|starred_actors|Jeff Bridges
+The_Confession|starred_actors|Yves Montand
+Black_Water|directed_by|David Nerlich
+Masked_and_Anonymous|has_genre|Drama
+A_Bunch_of_Amateurs|release_year|2008
+The_Secret_in_Their_Eyes|starred_actors|Ricardo DarÃ­n
+The_Men_Who_Stare_at_Goats|starred_actors|Jeff Bridges
+Bad_Company|starred_actors|Jeff Bridges
+Tangled_Ever_After|release_year|2012
+Afternoon_Delight|has_genre|Drama
+Glory_Daze|starred_actors|French Stewart
+Private_Resort|starred_actors|Johnny Depp
+The_Confession|starred_actors|Ben Kingsley
+Beyond_a_Reasonable_Doubt|release_year|2009
+Climates|written_by|Nuri Bilge Ceylan
+Transylmania|written_by|Patrick Casey
+The_Journey_of_Natty_Gann|release_year|1985
+The_Mirror_Has_Two_Faces|starred_actors|Jeff Bridges
+The_Secret_in_Their_Eyes|directed_by|Juan JosÃ© Campanella
+The_Morning_After|starred_actors|Jeff Bridges
+The_Fisher_King|has_genre|Comedy
+Arlington_Road|starred_actors|Jeff Bridges
+Violeta_Went_to_Heaven|written_by|AndrÃ©s Wood
+Ruby_in_Paradise|release_year|1993
+Middle_of_Nowhere|starred_actors|Omari Hardwick
+Bury_My_Heart_at_Wounded_Knee|written_by|Daniel Giat
+Article_99|starred_actors|Forest Whitaker
+Zebrahead|starred_actors|Lois Bendler
+The_Legend_of_Hercules|written_by|Daniel Giat
+Speedway_Junky|directed_by|Nickolas Perry
+Take_a_Girl_Like_You|written_by|Kingsley Amis
+Ruby_in_Paradise|starred_actors|Todd Field
+Take_a_Girl_Like_You|starred_actors|Oliver Reed
+Ronal_the_Barbarian|written_by|ThorbjÃ¸rn Christoffersen
+Article_99|starred_actors|Ray Liotta
+The_Men_Who_Stare_at_Goats|has_genre|War
+Jennifer's_Body|release_year|2009
+The_Legend_of_Hercules|release_year|2014
+Hedgehog_in_the_Fog|directed_by|Yuriy Norshteyn
+Turistas|starred_actors|Melissa George
+Project_X|directed_by|Nima Nourizadeh
+Uncommon_Valor|starred_actors|Reb Brown
+National_Lampoon_Presents_Dorm_Daze|written_by|Patrick Casey
+Bunny_and_the_Bull|written_by|Paul King
+Project_X|starred_actors|Oliver Cooper
+Valkyrie|release_year|2008
+Another_Cinderella_Story|has_genre|Comedy
+Black_Dragons|directed_by|William Nigh
+The_Journey_of_Natty_Gann|starred_actors|Lainie Kazan
+Free_Enterprise|starred_actors|Eric McCormack
+Piccadilly|starred_actors|Gilda Gray
+Tangled|release_year|2010
+Rancho_Deluxe|starred_actors|Jeff Bridges
+Kiss_Me_Goodbye|starred_actors|Jeff Bridges
+Shaft|directed_by|John Singleton
+XXY|directed_by|LucÃ­a Puenzo
+Fearless|starred_actors|Jeff Bridges
+The_Man_Who_Loved_Women|in_language|French
+Dom_Hemingway|directed_by|Richard Shepard
+Torn|starred_actors|John Heard
+The_Merry_Widow|written_by|Viktor LÃ©on
+Cold_Souls|has_genre|Comedy
+Iron_Man|has_genre|Action
+Uncommon_Valor|written_by|Joe Gayton
+Article_99|starred_actors|Kiefer Sutherland
+Klute|directed_by|Alan J. Pakula
+The_Saragossa_Manuscript|in_language|Polish
+The_Betrayed|has_genre|Crime
+Cat_People|in_language|Serbian
+Fatso|in_language|Norwegian
+All's_Faire_in_Love|starred_actors|Owen Benjamin
+Iron_Man|starred_actors|Jeff Bridges
+Turistas|has_genre|Horror
+The_Usual_Suspects|directed_by|Bryan Singer
+The_Amateurs|has_genre|Comedy
+Memoirs_of_an_Invisible_Man|starred_actors|Daryl Hannah
+Wildflowers|directed_by|Melissa Painter
+The_Man_Who_Loved_Women|starred_actors|Kim Basinger
+CrissCross|written_by|Scott Sommer
+Torn|written_by|Michael Richter
+Spiral|release_year|2007
+Hearts_of_the_West|has_genre|Western
+Masked_and_Anonymous|has_genre|Comedy
+Roxanne|directed_by|Fred Schepisi
+Afternoon_Delight|has_genre|Comedy
+Bad_Company|has_genre|Comedy
+Torn|starred_actors|Faran Tahir
+Frida|release_year|2002
+Vatel|directed_by|Roland JoffÃ©
+Seventh_Son|starred_actors|Jeff Bridges
+The_Betrayed|starred_actors|Melissa George
+There_Be_Dragons|directed_by|Roland JoffÃ©
+The_Last_Unicorn|starred_actors|Jeff Bridges
+Fist_of_the_North_Star|starred_actors|Malcolm McDowell
+X-Men|directed_by|Bryan Singer
+The_Big_Lebowski|has_genre|Comedy
+Crazy_Heart|starred_actors|Jeff Bridges
+Summer_Lovers|starred_actors|Daryl Hannah
+Crazy_Heart|has_genre|Drama
+Jumanji|written_by|Chris Van Allsburg
+Another_Cinderella_Story|starred_actors|Jane Lynch
+Tale_of_Tales|directed_by|Yuriy Norshteyn
+Pixote|has_genre|Drama
+Torn|starred_actors|Dendrie Taylor
+Public_Access|release_year|1993
+Apt_Pupil|release_year|1998
+A_Bunch_of_Amateurs|directed_by|Andy Cadiff
+Blown_Away|has_genre|Action
+Wild_Bill|has_genre|Western
+Kiss_Me_Goodbye|has_genre|Comedy
+Mischief|written_by|Noel Black
+Public_Access|directed_by|Bryan Singer
+Coraline|has_genre|Fantasy
+Fatso|written_by|Arild FrÃ¶hlich
+The_Muse|starred_actors|Jeff Bridges
+Love_Stinks|starred_actors|French Stewart
+Triangle|starred_actors|Melissa George
+Chasing_Liberty|release_year|2004
+Let_Sleeping_Corpses_Lie|in_language|Italian
+Cold_Souls|starred_actors|Dina Korzun
+Summer_Lovers|directed_by|Randal Kleiser
+CrissCross|has_genre|Drama
+Nadine|has_genre|Comedy
+The_Last_Picture_Show|has_genre|Drama
+XXY|starred_actors|Ricardo DarAn
+Attack_of_the_50_Ft._Woman|starred_actors|Daryl Hannah
+Superman_Returns|directed_by|Bryan Singer
+Coraline|written_by|Henry Selick
+Let_Sleeping_Corpses_Lie|starred_actors|Cristina GalbÃ³
+The_Last_American_Hero|has_genre|Sport
+Surf's_Up|has_genre|Animation
+Stay_Hungry|starred_actors|Jeff Bridges
+The_Linguini_Incident|written_by|Richard Shepard
+Stay_Hungry|has_genre|Drama
+Stick_It|has_genre|Drama
+The_Gingerbread_Man|starred_actors|Daryl Hannah
+Violeta_Went_to_Heaven|has_genre|Biography
+The_Pope_of_Greenwich_Village|starred_actors|Daryl Hannah
+Hedgehog_in_the_Fog|written_by|Sergei Kozlov
+Reckless|directed_by|James Foley
+Chasing_Liberty|directed_by|Andy Cadiff
+Surf's_Up|starred_actors|Jeff Bridges
+Kamchatka|starred_actors|Ricardo DarÃ­n
+A_Mighty_Heart|starred_actors|Dan Futterman
+Sliding_Doors|has_genre|Comedy
+Little_Miss_Marker|directed_by|Walter Bernstein
+Little_Miss_Marker|written_by|William R. Lipman
+Beyond_a_Reasonable_Doubt|written_by|Douglas Morrow
+Return_with_Honor|written_by|Terry Sanders
+8_Million_Ways_to_Die|has_genre|Crime
+Article_99|starred_actors|Lea Thompson
+The_Fabulous_Baker_Boys|has_genre|Music
+Vatel|in_language|English
+North_Face|starred_actors|Florian Lukas
+There_Be_Dragons|in_language|English
+Take_a_Girl_Like_You|starred_actors|John Bird
+Free_Enterprise|directed_by|Robert Meyer Burnett
+Blown_Away|starred_actors|Jeff Bridges
+The_Mummy|starred_actors|John Hannah
+Fist_of_the_North_Star|written_by|Buronson
+Zebrahead|written_by|Anthony Drazan
+Son_of_the_Bride|starred_actors|Ricardo DarÃ­n
+Climates|starred_actors|Nuri Bilge Ceylan
+The_Bounty|written_by|Richard Hough
+Transylmania|starred_actors|Patrick Casey
+Splash|directed_by|Ron Howard
+Two_Much|directed_by|Fernando Trueba
+A_Mighty_Heart|written_by|Mariane Pearl
