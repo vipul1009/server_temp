@@ -1,7 +1,7 @@
 from transformers import AutoTokenizer, AutoModelForCausalLM, pipeline
 
 # Load GPT-OSS 3B model from Hugging Face (replace with actual model name if needed)
-model_name = "openai-community/gpt-oss-3b"  # Placeholder name; update if different
+model_name = "EleutherAI/gpt-neo-2.7B"  # Placeholder name; update if different
 
 # Load tokenizer and model
 tokenizer = AutoTokenizer.from_pretrained(model_name)
