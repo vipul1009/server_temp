@@ -1,7 +1,7 @@
 from transformers import AutoTokenizer, AutoModelForCausalLM
 import torch
 
-model_id = "google/gemma-1.1-27b-it"  # Instruction-tuned variant
+model_id = "google/gemma-3-27b-it"  # Instruction-tuned variant
 
 # Load tokenizer
 tokenizer = AutoTokenizer.from_pretrained(model_id)
