@@ -1,13 +1,35 @@
-from transformers import AutoTokenizer, AutoModelForCausalLM, pipeline
+from transformers import AutoTokenizer, AutoModelForCausalLM
+import torch
 
-model_name = "TinyLlama/TinyLlama-1.1B-Chat-v1.0"
+model_id = "google/gemma-1.1-27b-it"  # Instruction-tuned variant
 
-tokenizer = AutoTokenizer.from_pretrained(model_name)
-model = AutoModelForCausalLM.from_pretrained(model_name)
+# Load tokenizer
+tokenizer = AutoTokenizer.from_pretrained(model_id)
 
-generator = pipeline("text-generation", model=model, tokenizer=tokenizer, device=0)
+# Load model in 4-bit quantized mode
+model = AutoModelForCausalLM.from_pretrained(
+    model_id,
+    device_map="auto",              # Automatically maps to GPU
+    load_in_4bit=True,              # 4-bit quantization
+    torch_dtype=torch.float16,      # Efficient precision
+)
 
-prompt = "Using only the words from the triple, generate a natural sentence: Triple: Trump | President | America"
-output = generator(prompt, max_length=50, do_sample=True, temperature=0.7)
+# Prompt
+prompt = "Explain the concept of quantization in NLP."
 
-print("Generated:", output[0]['generated_text'])
+# Tokenize and move to GPU
+inputs = tokenizer(prompt, return_tensors="pt").to("cuda")
+
+# Generate output
+with torch.no_grad():
+    outputs = model.generate(
+        **inputs,
+        max_new_tokens=150,
+        do_sample=True,
+        temperature=0.7,
+        top_p=0.95
+    )
+
+# Decode and print
+response = tokenizer.decode(outputs[0], skip_special_tokens=True)
+print(response)
