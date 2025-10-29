@@ -6,7 +6,7 @@ import os
 os.environ["CUDA_LAUNCH_BLOCKING"] = "1"
 
 # ✅ Use a valid public model (Gemma 27B not released yet)
-model_id = "google/gemma-27b-it"
+model_id = "google/gemma-3-27b-it"
 
 # Load tokenizer
 tokenizer = AutoTokenizer.from_pretrained(model_id)
