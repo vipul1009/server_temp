@@ -47,12 +47,106 @@ triples = [
     "Kismet|directed_by|William Dieterle",
     "Kismet|written_by|Edward Knoblock",
     "Kismet|starred_actors|Marlene Dietrich",
+    "Kismet|starred_actors|Edward Arnold",
+    "Kismet|starred_actors|Ronald Colman",
+    "Kismet|starred_actors|James Craig",
+    "Kismet|release_year|1944",
+    "Kismet|in_language|English",
+    "Kismet|has_tags|bd-r",
     "Flags of Our Fathers|directed_by|Clint Eastwood",
     "Flags of Our Fathers|written_by|Paul Haggis",
+    "Flags of Our Fathers|written_by|Ron Powers",
+    "Flags of Our Fathers|written_by|James Bradley",
+    "Flags of Our Fathers|release_year|2006",
     "Flags of Our Fathers|has_genre|War",
+    "Flags of Our Fathers|has_imdb_votes|famous",
+    "Flags of Our Fathers|has_tags|world war ii",
+    "Flags of Our Fathers|has_tags|war",
+    "Flags of Our Fathers|has_tags|r",
+    "Flags of Our Fathers|has_tags|clint eastwood",
+    "Flags of Our Fathers|has_tags|american",
+    "Flags of Our Fathers|has_tags|iwo jima",
+    "Flags of Our Fathers|has_tags|flag",
+    "The Bride Wore Black|directed_by|François Truffaut",
+    "The Bride Wore Black|written_by|Cornell Woolrich",
+    "The Bride Wore Black|written_by|François Truffaut",
+    "The Bride Wore Black|starred_actors|Jeanne Moreau",
+    "The Bride Wore Black|starred_actors|Michel Bouquet",
+    "The Bride Wore Black|starred_actors|Charles Denner",
+    "The Bride Wore Black|release_year|1968",
+    "The Bride Wore Black|in_language|French",
+    "The Bride Wore Black|has_tags|bd-r",
+    "The Bride Wore Black|has_tags|revenge",
+    "The Bride Wore Black|has_tags|wedding",
+    "The Bride Wore Black|has_tags|françois truffaut",
+    "The Bride Wore Black|has_tags|black",
+    "The Bride Wore Black|has_tags|bride",
+    "Dirty Filthy Love|directed_by|Adrian Shergold",
+    "Dirty Filthy Love|written_by|Jeff Pope",
+    "Dirty Filthy Love|starred_actors|Michael Sheen",
+    "Dirty Filthy Love|starred_actors|Claudie Blakley",
+    "Dirty Filthy Love|starred_actors|Anastasia Griffith",
+    "Dirty Filthy Love|starred_actors|Adrian Bower",
+    "Dirty Filthy Love|release_year|2004",
+    "Dirty Filthy Love|has_genre|Drama",
     "The Dark Horse|directed_by|Alfred E. Green",
     "The Dark Horse|starred_actors|Bette Davis",
-    "The Dark Horse|release_year|1932"
+    "The Dark Horse|starred_actors|Warren William",
+    "The Dark Horse|release_year|1932",
+    "The Dark Horse|has_genre|Comedy",
+    "The Dark Horse|has_tags|alfred e. green",
+    "The Sentinel|directed_by|Clark Johnson",
+    "The Sentinel|written_by|Gerald Petievich",
+    "The Sentinel|starred_actors|Michael Douglas",
+    "The Sentinel|starred_actors|Kiefer Sutherland",
+    "The Sentinel|starred_actors|Eva Longoria",
+    "The Sentinel|release_year|2006",
+    "The Sentinel|has_genre|Thriller",
+    "The Sentinel|has_genre|Crime",
+    "The Sentinel|has_tags|thriller",
+    "The Sentinel|has_tags|crime",
+    "The Sentinel|has_tags|michael douglas",
+    "The Sentinel|has_tags|secret service",
+    "Funny About Love|directed_by|Leonard Nimoy",
+    "Funny About Love|written_by|Norman Steinberg",
+    "Funny About Love|written_by|David Frankel",
+    "Funny About Love|written_by|Bob Greene",
+    "Funny About Love|starred_actors|Gene Wilder",
+    "Funny About Love|release_year|1990",
+    "Funny About Love|has_genre|Comedy",
+    "Kissed|directed_by|Lynne Stopkewich",
+    "Kissed|written_by|Barbara Gowdy",
+    "Kissed|written_by|Lynne Stopkewich",
+    "Kissed|starred_actors|Molly Parker",
+    "Kissed|starred_actors|Peter Outerbridge",
+    "Kissed|release_year|1996",
+    "Kissed|has_tags|necrophilia",
+    "Alive|written_by|Tsutomu Takahashi",
+    "Alive|starred_actors|Hideo Sakaki",
+    "Alive|release_year|2002",
+    "Alive|in_language|Japanese",
+    "Alive|has_genre|Action",
+    "Alive|has_tags|japan",
+    "Alive|has_tags|prison",
+    "Snow Queen|directed_by|David Wu",
+    "Snow Queen|starred_actors|Bridget Fonda",
+    "Snow Queen|starred_actors|Chelsea Hobbs",
+    "Snow Queen|release_year|2002",
+    "Chopper|directed_by|Andrew Dominik",
+    "Chopper|written_by|Andrew Dominik",
+    "Chopper|starred_actors|Eric Bana",
+    "Chopper|starred_actors|David Field",
+    "Chopper|starred_actors|Simon Lyndon",
+    "Chopper|release_year|2000",
+    "Chopper|has_tags|australia",
+    "Chopper|has_tags|australian",
+    "Chopper|has_tags|eric bana",
+    "Chopper|has_tags|andrew dominik",
+    "The Mistress of Spices|directed_by|Paul Mayeda Berges",
+    "The Mistress of Spices|written_by|Gurinder Chadha",
+    "The Mistress of Spices|written_by|Paul Mayeda Berges",
+    "The Mistress of Spices|written_by|Chitra Banerjee Divakaruni",
+    "The Mistress of Spices|release_year|2005"
 ]
 
 def verbalize_one(triple, model, tokenizer):
@@ -115,7 +209,7 @@ try:
 
     print(f"\n--- Verbalization Complete. Sentences saved to {output_filename} ---")
 
-    # --- 5. NEW: Read File and Generate Summary ---
+    # --- 5. Read File and Generate Summary ---
     
     print(f"\n--- Step 3: Reading {output_filename} for Summarization ---")
     
@@ -158,9 +252,18 @@ try:
     summary_response_tokens = summary_output_ids[0][summary_prompt_length:]
     summary_text = tokenizer.decode(summary_response_tokens, skip_special_tokens=True)
 
-    # 6. Print the final summary
+    # 6. Clean and save the final summary
+    summary_filename = "summary.txt"
+    cleaned_summary = summary_text.strip()
+
     print("\n--- Generated Summary ---")
-    print(summary_text.strip())
+    print(cleaned_summary) # Display the summary on the console
+
+    # --- MODIFICATION: Save the summary to summary.txt ---
+    with open(summary_filename, "w", encoding="utf-8") as f:
+        f.write(cleaned_summary)
+    
+    print(f"\n--- Summary successfully saved to {summary_filename} ---")
 
 
 except Exception as e:
