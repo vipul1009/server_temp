@@ -4,7 +4,7 @@
 # In[1]:
 
 
-get_ipython().system('pip install -U transformers')
+pip install -U transformers
 
 
 # ## Local Inference on GPU 
