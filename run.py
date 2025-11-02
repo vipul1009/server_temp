@@ -1,8 +1,47 @@
-import re
-import torch
-from transformers import GenerationConfig # Note: This import isn't used in your func, which is fine!
+# --- 1. Installation ---
+#
+# First, you must run this in your terminal to install the required libraries.
+# Your CUDA 12.1 is perfect for this.
+#
+# pip install torch transformers accelerate bitsandbytes
+#
+# ----------------------------------------
 
-# --- Your data ---
+import torch
+from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig
+import re
+
+print("--- Step 1: Loading 4-bit Model (gemma-2-27b-it) ---")
+
+# --- 2. Load the Model and Tokenizer ---
+
+# This is the official instruction-tuned model
+model_id = "google/gemma-2-27b-it"
+
+# This tells the transformer to load the model in 4-bit
+quantization_config = BitsAndBytesConfig(
+    load_in_4bit=True,
+    bnb_4bit_compute_dtype=torch.bfloat16  # Your V100 supports bfloat16 for faster compute
+)
+
+# Load the Tokenizer
+tokenizer = AutoTokenizer.from_pretrained(model_id)
+
+# Load the Model
+# - `quantization_config` applies the 4-bit loading
+# - `device_map="auto"` automatically finds and uses your V100 GPU
+model = AutoModelForCausalLM.from_pretrained(
+    model_id,
+    quantization_config=quantization_config,
+    torch_dtype=torch.bfloat16,
+    device_map="auto",
+)
+
+print("\n--- Model Loaded Successfully on GPU! ---")
+
+# --- 3. Define Your Data and Function ---
+
+# Your list of triples
 triples = [
     "Kismet|directed_by|William Dieterle",
     "Kismet|written_by|Edward Knoblock",
@@ -15,9 +54,11 @@ triples = [
     "The Dark Horse|release_year|1932"
 ]
 
-# --- CORRECTED verbalization function ---
-
-def verbalize_one(triple):
+def verbalize_one(triple, model, tokenizer):
+    """
+    Verbalizes a single triple using the model's chat template.
+    """
+    
     # 1. Format the prompt using the model's required chat template
     # We provide the "one-shot" example as conversation history
     chat = [
@@ -27,39 +68,40 @@ def verbalize_one(triple):
     ]
     
     # 2. Tokenize the entire chat
-    # We let the tokenizer handle all special tokens and formatting
     input_ids = tokenizer.apply_chat_template(
         chat,
         return_tensors="pt",
-        add_generation_prompt=True # This adds the '<start_of_turn>model' for us
+        add_generation_prompt=True # Adds the '<start_of_turn>model' token
     ).to(model.device)
 
-    # 3. Store the length of our prompt
+    # 3. Store the length of our prompt to slice it out later
     prompt_length = input_ids.shape[1]
 
     # 4. Generate the response
     output_ids = model.generate(
         input_ids,
-        max_new_tokens=64,
-        do_sample=False  # Use greedy decoding for factual answers
+        max_new_tokens=64,     # Max length of the *new* sentence
+        do_sample=False,       # Use greedy decoding (best for this factual task)
     )
     
     # 5. Decode *only* the newly generated tokens
-    # This is much more reliable than text.replace()
+    # This is much more reliable than trying to strip the prompt text
     response_tokens = output_ids[0][prompt_length:]
     text = tokenizer.decode(response_tokens, skip_special_tokens=True)
     
-    # 6. Your post-processing (this was good!)
-    text = re.split(r"[\n\r]", text)[0].strip()
+    # 6. Post-process the output
+    text = re.split(r"[\n\r]", text)[0].strip() # Take first line
     if not text.endswith(('.', '!', '?')):
         text += '.'
     return text
 
-# --- Run the loop ---
-print("--- Starting Triple Verbalization ---")
+# --- 4. Run the Code ---
+
+print("\n--- Step 2: Starting Triple Verbalization ---")
 for t in triples:
     print(f"\nInput: {t}")
-    output_text = verbalize_one(t)
+    # Pass the loaded model and tokenizer to the function
+    output_text = verbalize_one(t, model, tokenizer)
     print(f"Output: {output_text}")
 
 print("\n--- Verbalization Complete ---")
