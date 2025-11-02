@@ -10,7 +10,6 @@
 import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig
 import re
-import sys # Import sys for the error handling
 
 print("--- Step 1: Loading 4-bit Model (gemma-2-27b-it) ---")
 
@@ -29,6 +28,8 @@ quantization_config = BitsAndBytesConfig(
 tokenizer = AutoTokenizer.from_pretrained(model_id)
 
 # Load the Model
+# - `quantization_config` applies the 4-bit loading
+# - `device_map="auto"` automatically finds and uses your V100 GPU
 model = AutoModelForCausalLM.from_pretrained(
     model_id,
     quantization_config=quantization_config,
@@ -38,9 +39,8 @@ model = AutoModelForCausalLM.from_pretrained(
 
 print("\n--- Model Loaded Successfully on GPU! ---")
 
-# --- 3. Define Your Data and New Batch Function ---
+# --- 3. Define Your Data and Function ---
 
-# Your list of 167 triples
 triples = [
     "Kismet|directed_by|William Dieterle", "Kismet|written_by|Edward Knoblock",
     "Kismet|starred_actors|Marlene Dietrich", "Kismet|starred_actors|Edward Arnold",
@@ -126,47 +126,25 @@ triples = [
     "Love Happens|has_genre|Romance", "Love Happens|has_tags|jennifer aniston"
 ]
 
-def verbalize_batch(triples_string, model, tokenizer):
+
+def verbalize_one(triple, model, tokenizer):
     """
-    Verbalizes a batch of triples (as a single string)
-    using an advanced few-shot chat template.
+    Verbalizes a single triple using the model's chat template.
     """
     
-    # 1. Create the chat list with a prompt designed for BATCHES
+    # 1. Format the prompt using the model's required chat template
+    # We provide the "one-shot" example as conversation history
     chat = [
-        { 
-          "role": "user", 
-          "content": """You are an expert in transforming knowledge base triples into natural, human-friendly sentences.
-Your task is to convert **all** input triples I provide into clear, grammatically correct sentences.
-The input will be a list of triples, one per line.
-Your output must be **only** the corresponding sentences, one per line. Do not add headers or commentary."""
-        },
-        { 
-          "role": "user", 
-          "content": """**Example Input**:
-Kismet|directed_by|William Dieterle
-Kismet|release_year|1944
-Flags of Our Fathers|has_genre|War"""
-        },
-        { 
-          "role": "model", 
-          "content": """**Example Output**:
-Kismet was directed by William Dieterle.
-Kismet was released in 1944.
-Flags of Our Fathers is a War film."""
-        },
-        { 
-          "role": "user", 
-          "content": f"""Excellent. Now apply these rules to verbalize the following triples:
-{triples_string}"""
-        }
+        { "role": "user", "content": "Convert the triple below into a natural English sentence.\nInput: Casablanca|directed_by|Michael Curtiz" },
+        { "role": "model", "content": "Casablanca is directed by Michael Curtiz." },
+        { "role": "user", "content": f"Now verbalize this triple:\n{triple}" }
     ]
     
     # 2. Tokenize the entire chat
     input_ids = tokenizer.apply_chat_template(
         chat,
         return_tensors="pt",
-        add_generation_prompt=True
+        add_generation_prompt=True # Adds the '<start_of_turn>model' token
     ).to(model.device)
 
     # 3. Store the length of our prompt to slice it out later
@@ -175,39 +153,28 @@ Flags of Our Fathers is a War film."""
     # 4. Generate the response
     output_ids = model.generate(
         input_ids,
-        # *** THIS IS THE KEY FIX ***
-        # Increased token limit for 167 sentences. 
-        # (167 triples * ~20 tokens/sentence = ~3340. 4096 is a safe limit.)
-        max_new_tokens=4096,
-        do_sample=False,         # Greedy decoding for factual output
+        max_new_tokens=64,     # Max length of the *new* sentence
+        do_sample=False,       # Use greedy decoding (best for this factual task)
     )
     
     # 5. Decode *only* the newly generated tokens
+    # This is much more reliable than trying to strip the prompt text
     response_tokens = output_ids[0][prompt_length:]
     text = tokenizer.decode(response_tokens, skip_special_tokens=True)
     
-    return text.strip()
+    # 6. Post-process the output
+    text = re.split(r"[\n\r]", text)[0].strip() # Take first line
+    if not text.endswith(('.', '!', '?')):
+        text += '.'
+    return text
 
 # --- 4. Run the Code ---
 
-print("\n--- Step 2: Starting Batch Verbalization ---")
-
-# Convert your list of triples into a single string
-triples_to_verbalize = "\n".join(triples)
-
-# We print just the first 5 for brevity in the log
-print(f"\nInput Batch (first 5 triples):\n" + "\n".join(triples[:5]))
-
-try:
+print("\n--- Step 2: Starting Triple Verbalization ---")
+for t in triples:
+    print(f"\nInput: {t}")
     # Pass the loaded model and tokenizer to the function
-    output_text = verbalize_batch(triples_to_verbalize, model, tokenizer)
+    output_text = verbalize_one(t, model, tokenizer)
+    print(f"Output: {output_text}")
 
-    print(f"\n--- Model Output ---")
-    print(output_text)
-
-    print("\n--- Verbalization Complete ---")
-
-except (BrokenPipeError, KeyboardInterrupt):
-    # Handle common exit errors gracefully
-    sys.stderr.write("Broken pipe or user interrupt. Exiting.\n")
-    pass
+print("\n--- Verbalization Complete ---")
