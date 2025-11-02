@@ -90,15 +90,9 @@ def verbalize_one(triple, model, tokenizer):
             "   - No additional commentary or headers.\n\n"
             "**Examples**:\n"
             "Input:\n"
-            "Binignit main ingredients Sweet potato\n"
-            "Binignit course Dessert\n"
-            "Allama Iqbal International Airport location Pakistan\n"
-            "Allama Iqbal International Airport runway length 2900.0\n"
+            "Casablanca|directed_by|Michael Curtiz\n"
             "Output:\n"
-            "The main ingredient of Binignit is Sweet potato.\n"
-            "Binignit is a dessert.\n"
-            "Allama Iqbal International Airport is located in Pakistan.\n"
-            "The runway length of Allama Iqbal International Airport is 2900 meters.\n\n"
+            "Casablanca is directed by Michael Curtiz.\n\n"
             "**Instructions**:\n"
             "- Process all triples together, producing one sentence per triple.\n"
             "- Use natural phrasing, correct tense, and implied units (e.g., meters for runway length).\n"
@@ -110,12 +104,12 @@ def verbalize_one(triple, model, tokenizer):
         "content": "Convert the triple below into a natural English sentence.\nInput: Casablanca|directed_by|Michael Curtiz"
     },
     {
-        "role": "model",
+        "role": "assistant",
         "content": "Casablanca is directed by Michael Curtiz."
     },
     {
         "role": "user",
-        "content": "Now verbalize these triples:\n{triples}"
+        "content": f"Now verbalize these triples:\n{triple}"
     }
 ]
 
