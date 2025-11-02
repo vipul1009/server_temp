@@ -78,7 +78,7 @@ Instructions: Summarize the following input into one dense, cohesive paragraph. 
     # Note: Using do_sample=True for better, more natural summarization
     summary_output_ids = model.generate(
         summary_input_ids,
-        max_new_tokens=512,    # Allow more tokens for a summary
+        max_new_tokens=1024,    # Allow more tokens for a summary
         do_sample=True,        # Enable sampling for a more creative summary
         temperature=0.7,
         top_p=0.9,
