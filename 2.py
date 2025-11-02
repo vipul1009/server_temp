@@ -1,4 +1,35 @@
-# (Assuming the 'try' block starts here, along with 'tokenizer' and 'model' being defined)
+import torch
+from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig
+import re
+import os # Added for file operations
+
+print("--- Step 1: Loading 4-bit Model (gemma-2-27b-it) ---")
+
+# --- 2. Load the Model and Tokenizer ---
+
+# This is the official instruction-tuned model
+model_id = "google/gemma-2-27b-it"
+
+# This tells the transformer to load the model in 4-bit
+quantization_config = BitsAndBytesConfig(
+    load_in_4bit=True,
+    bnb_4bit_compute_dtype=torch.bfloat16  # Your V100 supports bfloat16 for faster compute
+)
+
+# Load the Tokenizer
+tokenizer = AutoTokenizer.from_pretrained(model_id)
+
+# Load the Model
+# - `quantization_config` applies the 4-bit loading
+# - `device_map="auto"` automatically finds and uses your V100 GPU
+model = AutoModelForCausalLM.from_pretrained(
+    model_id,
+    quantization_config=quantization_config,
+    torch_dtype=torch.bfloat16,
+    device_map="auto",
+)
+
+print("\n--- Model Loaded Successfully on GPU! ---")# (Assuming the 'try' block starts here, along with 'tokenizer' and 'model' being defined)
 try:
     # --- 5. Read File and Generate Summary ---
     
