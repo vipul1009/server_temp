@@ -42,7 +42,7 @@ print("\n--- Model Loaded Successfully on GPU! ---")
 # --- 3. Define Your Data and New Batch Function ---
 
 # Your list of triples
-triples = [
+triple = [
     "Kismet|directed_by|William Dieterle",
     "Kismet|written_by|Edward Knoblock",
     "Kismet|starred_actors|Marlene Dietrich",
