@@ -42,7 +42,7 @@ print("\n--- Model Loaded Successfully on GPU! ---")
 # --- 3. Define Your Data and New Batch Function ---
 
 # Your list of triples
-triple = [
+triples = [
     "Kismet|directed_by|William Dieterle",
     "Kismet|written_by|Edward Knoblock",
     "Kismet|starred_actors|Marlene Dietrich",
@@ -271,7 +271,7 @@ I will provide you with several examples so you can learn the correct style."""
           "content": f"""Excellent. You have learned the patterns. Now, apply the same logic to the following triple.
 Output only the single, verbalized sentence.
 
-Input: {triple}"""
+Input: {triples}"""
         }
     ]
     
